@@ -2,6 +2,10 @@
 - It is an open source container orchestration platform that automates many of the manual processes involved in deploying, managing, and scaling containerized applications.
 -  It was originally developed by Google and is now maintained by the Cloud Native Computing Foundation.
 
+
+# ![image](https://github.com/user-attachments/assets/2324a0f7-0072-42f3-a614-b5b984bfcabf)
+
+
 **Key features of Kubernetes include**:
 1. Container Management: Simplifies running and managing containers across clusters.
 2. Scaling: Automatically adjusts the number of active containers based on demand.
@@ -20,3 +24,9 @@
 - The difference when using Kubernetes with Docker is that an automated system asks Docker to do those things instead of the admin doing so manually on all nodes for all containers.
 
 # ![image](https://github.com/user-attachments/assets/3e873b57-b536-44d0-8406-1f00faf3bbc1)
+
+# Minikube
+![image](https://github.com/user-attachments/assets/d13159ed-cc18-4267-b491-4323cb9ec9c6)
+
+- Minikube is a one-node Kubernetes cluster where master processes and work processes both run on one node.
+- Minikube is local Kubernetes, focusing on making it easy to learn and develop for Kubernetes.
