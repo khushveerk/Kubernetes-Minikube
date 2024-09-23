@@ -9,3 +9,14 @@
 4. Self-healing: Automatically restarts failed containers and replaces or reschedules them as needed.
 5. Service Discovery: Allows containers to communicate with each other and external services seamlessly.
 6. Configuration Management: Manages application configuration and secrets securely.
+
+# Kubernetes cluster
+- A working Kubernetes deployment is called a cluster, which is a group of hosts running Linux® containers. You can visualize a Kubernetes cluster as two parts: the control plane and the compute machines, or nodes.
+
+- Each node is its own Linux environment, and could be either a physical or virtual machine. Each node runs pods, which are made up of containers.
+
+# Kubernetes vs Docker
+- Docker can be used as a container runtime that Kubernetes orchestrates. When Kubernetes schedules a pod to a node, the kubelet (the service that makes sure each container is running) on that node will instruct Docker to launch the specified containers.
+- The difference when using Kubernetes with Docker is that an automated system asks Docker to do those things instead of the admin doing so manually on all nodes for all containers.
+
+# ![image](https://github.com/user-attachments/assets/3e873b57-b536-44d0-8406-1f00faf3bbc1)
