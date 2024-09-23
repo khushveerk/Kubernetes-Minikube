@@ -39,3 +39,4 @@
 5. Portable Environment
 
 # How to install Minikube ?
+**1. 
