@@ -39,4 +39,69 @@
 5. Portable Environment
 
 # How to install Minikube ?
-**1. 
+**Step 1: Open PuTTY**
+   Enter the Hostname or IP Address
+   Click Open
+   Login to the server by writing ubuntu
+
+2. **STEP 2:** Install docker using the following command
+
+           curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
+
+![WhatsApp Image 2024-09-23 at 15 13 50_890bcc7a](https://github.com/user-attachments/assets/6a62086d-595f-4ea4-abae-109fdb571018)
+
+
+4. **STEP 3:**  Add your local user to docker group so that your local user run docker commands without sudo.
+
+               sudo usermod -aG docker $USER
+
+5. **STEP 4:** Now enter the following command
+
+              $ newgrp docker
+
+6. **STEP 5:** Install the Kubernetes command-line tool, kubectl, via the Snap package management system
+
+               sudo snap install kubectl --classic
+
+               kubectl version --client
+
+7. **STEP 6:** Download and Install Minikube Binary
+
+                curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
+                sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+8. **STEP 7:** Verify minikube version by following command
+
+                minikube version
+
+![WhatsApp Image 2024-09-23 at 15 13 52_d790956c](https://github.com/user-attachments/assets/5da6aaac-b513-44c0-b895-9fffe50c0fb8)
+
+9. **STEP 8:** Install Kubectl tool
+
+                curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+
+10. **STEP 9:** Start Minikube Cluster
+
+                minikube start --driver=docker
+
+11. **STEP 10:** Verify the status of your cluster
+
+                minikube status
+
+![WhatsApp Image 2024-09-24 at 00 39 14_7cfa6cbf](https://github.com/user-attachments/assets/104cb600-c576-42b9-812a-60a979c43e71)
+
+12. **STEP 11** Grant permissions
+
+                kubectl cluster-info
+
+                Kubectl config view
+
+                kubectl get nodes
+
+                kubectl get pods
+
+13. **STEP 12** start the Kubernetes dashboard run below command
+
+                minikube dashboard
+
