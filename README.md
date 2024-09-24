@@ -1,4 +1,4 @@
-# Kubernetes (K8S)
+8# Kubernetes (K8S)
 - It is an open source container orchestration platform that automates many of the manual processes involved in deploying, managing, and scaling containerized applications.
 -  It was originally developed by Google and is now maintained by the Cloud Native Computing Foundation.
 
@@ -39,10 +39,10 @@
 5. Portable Environment
 
 # How to install Minikube ?
-**Step 1: Open PuTTY**
-   Enter the Hostname or IP Address
-   Click Open
-   Login to the server by writing ubuntu
+**Step 1: Open PuTTY**          
+ - Enter the Hostname or IP Address.       
+ - Click Open.      
+ - Login to the server by writing ubuntu.       
 
 2. **STEP 2:** Install docker using the following command
 
@@ -104,4 +104,11 @@
 13. **STEP 12** start the Kubernetes dashboard run below command
 
                 minikube dashboard
+               
+ kubectl proxy --address='0.0.0.0' --disable-filter=true &
 
+15. **STEP 13** Use the following url on browser and use your public ip 
+
+               http://public_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
+
+![image alt](https://www.linuxbuzz.com/wp-content/uploads/2023/11/Kubernetes-Dashboard-GUI-Minikube-Ubuntu-1024x640.png)
